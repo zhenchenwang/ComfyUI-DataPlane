@@ -1,0 +1,1 @@
+The live workflow screenshot is stored as `dataplane-governed-query.png`.
