@@ -5,6 +5,21 @@
 ComfyUI-DataPlane turns a manually operated generation graph into a database-connected,
 auditable and resumable production workflow.
 
+## Live ComfyUI workflow
+
+![ComfyUI-DataPlane governed query workflow](docs/images/dataplane-governed-query.svg)
+
+A live ComfyUI workflow connecting a named SQLite profile to policy enforcement,
+parameter binding, structured SQL execution and row-level selection.
+
+The workflow shown above uses:
+
+```text
+Connection Profile ──┬──> Policy Gate ──> SQL Query ──> Row Selector
+                     └───────────────────> SQL Query
+Parameter Binder ───────────────────────> SQL Query
+```
+
 ## Current release
 
 - Version: 0.1.0
