@@ -1,0 +1,15 @@
+profiles:
+  research_sqlite:
+    driver: sqlite
+    database: "${DATAPLANE_SQLITE_PATH}"
+    read_only: true
+    timeout_seconds: 10
+    max_rows: 500
+    allowed_tables: [products, campaign_assets]
+  local_duckdb:
+    driver: duckdb
+    database: "${DATAPLANE_DUCKDB_PATH}"
+    read_only: true
+    timeout_seconds: 10
+    max_rows: 1000
+    allowed_tables: [assets, jobs]
